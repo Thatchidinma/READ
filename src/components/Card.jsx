@@ -30,7 +30,7 @@ const Card = () => {
     }
     )}
    </>
-  ) : (<div className='font-extrabold text-2xl col-span-5 mx-auto'>-------- SEARCH NOT FOUND -------</div>))
+  ) : (<div className='font-extrabold text-2xl col-span-5 mx-auto'>----- SEARCH NOT FOUND -----</div>))
 }
 
 export default Card
