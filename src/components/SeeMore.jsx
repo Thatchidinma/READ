@@ -14,7 +14,7 @@ const SeeMore = () => {
     const authors = book.volumeInfo.authors
     
   return  (
-    <div className="box-border min-h-svh w-svw fixed top-0 left-0 right-0 bottom-0 bg-black/10 flex justify-center items-center">
+    <div className="box-border sm:min-h-svh w-svw fixed top-0 left-0 right-0 bottom-0 bg-black/10 flex justify-center items-center">
         <div className="bg-white w-[90%] lg:w-[50%] p-4 relative">
         <button onClick={()=>setShow(false)} className='absolute top-4 right-4 text-2xl hover:scale-110'><FaRegWindowClose /></button>
         <div className="mt-8 flex justify-start">
