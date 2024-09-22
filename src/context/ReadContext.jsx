@@ -17,7 +17,7 @@ const ReadContextProvider = (props) => {
     const searchBook = (e) => {
         if(e.type === 'click' || (e.type === 'keydown' && e.key === "Enter")){
             setloading(true)
-            fetch(`https://www.googleapis.com/books/v1/volumes?q=${search}&printType=books&key=${import.meta.env.VITE_API_KEY}`+'&maxResults=40')
+            fetch(`https://www.googleapis.com/books/v1/volumes?q=${search}&printType=books&key=${import.meta.env.VITE_API}`+'&maxResults=40')
             .then(response => response.json())
             .then(data =>{
               setBookData(data.items);
