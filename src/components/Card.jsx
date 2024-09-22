@@ -19,8 +19,8 @@ const Card = () => {
         <div key={index} className='border flex flex-col flex-nowrap p-4 bg-slate-200 rounded-lg cursor-pointer hover '>
         <img src={img ? img : image1} alt="" className="w-[200px] h-[200px] m-auto" />
         <div className='mt-4 flex flex-col text-center m-auto'>
-          <h3 className='font-semibold sm:text-l'>{item.volumeInfo.title}</h3>
-          <h3 className='sm:text-sm'>{formatter.format(authors)}</h3>
+          <h3 className='font-semibold'>{item.volumeInfo.title}</h3>
+          <h3 className='sm:text-xs'>{formatter.format(authors)}</h3>
           <p onClick={()=>{setBook(item), setShow(true)}} className="text-sm text-center p-4 bg-gray-800 text-white px-6 mt-2 mx-auto rounded-lg hover:scale-110 transition ease-in-out ">See more </p>
         </div>
         </div>
